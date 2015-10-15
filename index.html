@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <title>My Portfolio Site</title>
+  <link href="http://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src= "js/jquery.min.js" defer></script>
+  <script src="js/bootstrap.min.js" defer></script>
+</head>
+<body class="container">
+  <header class=" row navbar">
+    <div class="col-x-12">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="additional-pages/about.html">About Jane Doette</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="additional-pages/published-work.html">Published Work<span class="sr-only">(current)</span></a></li>
+              <li><a href="additional-pages/contact.html">Contact</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Portfolio <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="additional-pages/nature.html">Nature</a></li>
+                  <li><a href="additional-pages/cities.html">Cities</a></li>
+                  <li><a href="additional-pages/animals.html">Animals</a></li>
+                  <li><a href="additional-pages/beaches.html">Beaches</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+    </div>
+  </header>
+  <div class="row">
+    <div class="col-md-6 ">
+      <img class="title-logo" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSlKxbC1IYma0yjDI7sUT072fc1FXsBEKiOzvIUIalCuvfQ4qUISw" alt="udacity logo">
+      <hr>
+    </div>
+    <div class="col-md-6 text-right text-uppercase">
+      <h1 class="title-super text-thin">Jane Doette</h1>
+      <h4 class="text-color">Photographer</h4>
+    </div>
+    <div class="col-md-12">
+      <img class="img-responsive" src="assets/ship.jpg" alt="HTML Code">
+    </div>
+  </div>
+    <div class="col-md-12 ">
+      <p class="text-muted lead text-center">"He is the best sailor who can steer within fewest points of the wind, and exact a motive power out of the greatest obstacles." -Walter Scott</p>
+    </div>
+    <div class="col-md-12">
+      <h2 class="text-muted">Featured Work</h2>
+    </div>
+  <div class="row text-center">
+    <div class="col-md-4">
+      <img class="img-responsive" src="assets/beach.jpg" srcset="assets/beach_1.jpg 1x, assets/beach_2.jpg 2x" alt="Beach" data-toggle="modal" data-target="#project1">
+      <h3>Ludington, MI</h3>
+      <h6 class="text-muted">July, 2013</h6>
+    </div>
+    <div class="col-md-4">
+      <img class="img-responsive" src="assets/deer.jpg" srcset="assets/deer_1.jpg 1x, assets/deer_2.jpg 2x" alt="Deer" data-toggle="modal" data-target="#project3">
+      <h3>Ludington, MI</h3>
+      <h6 class="text-muted">July, 2014</h6>
+    </div>
+    <div class="col-md-4">
+      <img class="img-responsive" src="assets/chicago.jpg" srcset="assets/chicago_1.jpg 1x, assets/chicago_2.jpg 2x" alt="Chicago" data-toggle="modal" data-target="#project2">
+      <h3>Chicago, IL</h3>
+      <h6 class="text-muted">April, 2015</h6>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel">Beautiful Beaches</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="assets/beach.jpg" alt="beach" data-toggle="modal" data-target="#project1">
+          This was from my first trip to Ludington, MI. The view of Lake Michigan was absolutley gorgeous!
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel2">Cities</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="assets/chicago.jpg" alt="chicago" data-toggle="modal" data-target="#project2">
+          I took this picture April 2015, on my trip to Chicago. The cityscape is absolutely gorgeous at night.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="myModalLabel3">Animals in the wild</h4>
+        </div>
+        <div class="modal-body">
+          <img class="img-responsive" src="assets/deer.jpg" alt="deer" data-toggle="modal" data-target="#project3">
+          This picture was also taken in Ludington, MI.  This deer was about 20 feet from the trail we were walking.  I managed to snap this picture before it took off and ran.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
